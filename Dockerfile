@@ -11,7 +11,6 @@ RUN git clone https://github.com/dobrosketchkun/bionic-reading-epub-converter.gi
 # Устанавливаем зависимости бота и конвертера
 COPY requirements.txt .
 RUN pip install -r requirements.txt
-RUN pip install -r converter/requirements.txt
 
 COPY bot.py .
 
